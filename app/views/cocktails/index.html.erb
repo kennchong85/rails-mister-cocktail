@@ -1,0 +1,24 @@
+<div class="row row-cols-1 row-cols-md-2">
+  <% @cocktails.each do |cocktail| %>
+    <div class="col mb-4 ">
+      <div class="card h-100 ">
+        <img src="https://images.unsplash.com/photo-1559778920-fb8cd0e1ec86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= cocktail.name %></h5>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Options
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <%= link_to "Info", cocktail_path(cocktail), class: 'dropdown-item'  %>
+                  <%= link_to "Edit", edit_cocktail_path(cocktail), class: 'dropdown-item' %>
+                  <%= link_to "Delete", cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?" }, class: 'dropdown-item' %>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
