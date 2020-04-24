@@ -8,6 +8,7 @@ gem 'country_select'
 gem 'autoprefixer-rails'
 
 gem 'font-awesome-sass', '~> 5.6.1'
+gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'simple_form'
 gem "actionview", ">= 5.2.4.2"

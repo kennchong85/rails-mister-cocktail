@@ -1,1 +1,36 @@
 // Specific CSS for your home-page
+.categories {
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-bottom: 120px;
+}
+
+.category-title {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.card-category p:hover {
+  text-decoration: none !important;
+}
+
