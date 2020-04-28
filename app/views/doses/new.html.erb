@@ -1,5 +1,8 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient, include_blank: false, include_hidden: false %>
-  <%= f.button :submit %>
-<% end %>
+
+<div class="container form-margin-top">
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :unit %>
+    <%= f.association :ingredient, include_blank: false, include_hidden: false %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>

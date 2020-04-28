@@ -20,8 +20,9 @@ class CocktailsController < ApplicationController
   end
 
   def show
-    @doses = Dose.where(cocktail_id: @cocktail)
-    @ingredients = Ingredient.all
+    @dose = Dose.where(cocktail_id: @cocktail)
+
+    @ingredient = Ingredient.where(cocktail_id: @cocktail)
   end
 
   def edit

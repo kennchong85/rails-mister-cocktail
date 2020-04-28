@@ -3,10 +3,9 @@
   // background-repeat: no-repeat;
   background-position: 50% 50%;
   // background-position: center;
-  padding: 150px;
+  padding: 150px 150px 150px;
   margin-top: 70px;
 }
-
 
 .cocktail-banner-text {
   color: white;
@@ -16,25 +15,12 @@
   text-align: center;
 }
 
-.cocktail-description {
-  background-color: #F8F8F8;
-  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.21);
-  border-radius: 6px;
-  margin: 30px 450px;
-  padding: 20px;
-  padding-left: 40px;
-}
-
-.description-title {
-  font-family: 'Special Elite', cursive;
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.description-text {
+.cocktail-banner-description {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-family: 'Roboto', sans-serif;
   font-size: 19px;
+  text-align: center;
 }
 
 .ingredient-header {
@@ -42,14 +28,14 @@
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
 .ingredient-text {
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -21,6 +21,7 @@ class DosesController < ApplicationController
     # add the cocktail to the dose
     @dose.cocktail = @cocktail
     @dose.ingredient = @ingredient
+    # binding.pry
     @dose.save
 
     redirect_to cocktail_path(@cocktail)
@@ -52,6 +53,6 @@ class DosesController < ApplicationController
   end
 
   def dose_params
-    params.require(:dose).permit(:description, :ingredient_id)
+    params.require(:dose).permit(:unit, :ingredient_id)
   end
 end
