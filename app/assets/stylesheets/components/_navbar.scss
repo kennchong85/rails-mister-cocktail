@@ -1,15 +1,5 @@
 /* app/assets/stylesheets/components/_navbar.scss */
 .navbar-lewagon {
-  // [...]
-  background-color: transparent;
-  transition: 0.5s background-color ease;
-}
-
-.navbar-lewagon-white {
-  background-color: white;
-}
-
-.navbar-lewagon {
   justify-content: space-between;
   background: #4F4F4F;
   height: 70px;
@@ -27,7 +17,6 @@
   color: white;
 }
 
-
 .navbar-light .navbar-nav .nav-link {
   color: white;
   font-weight: bold;
@@ -39,5 +28,5 @@
 }
 
 .margin_space_for_navbar {
-  margin-top: 70  px;
+  margin-top: 70px;
 }
