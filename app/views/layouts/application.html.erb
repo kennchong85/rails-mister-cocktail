@@ -27,11 +27,21 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
-          </li>
+          <!-- Home Button -->
           <li class="nav-item">
-            <%= link_to "Add New Drink", "#", class: "nav-link" %>
+            <%= link_to "Home", root_path, class: "nav-link" %>
+          </li>
+          <!-- Add new Cocktail -->
+          <li class="nav-item">
+            <%= link_to "Add New Cocktail", new_cocktail_path, class: "nav-link" %>
+          </li>
+          <!-- Add New Wine -->
+          <li class="nav-item">
+            <%= link_to "Add New Wine", new_wine_path, class: "nav-link" %>
+          </li>
+          <!-- Add New Whiskey -->
+          <li class="nav-item">
+            <%= link_to "Add New Whiskey", new_whiskey_path, class: "nav-link" %>
           </li>
         </ul>
       </div>
