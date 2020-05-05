@@ -6,9 +6,25 @@
 </div>
 
 <!-- Description -->
-<div class="ingredient-header">
-  Description
-</div>
-<div class="index-banner-description">
-  <%= @wine.description %>
+<div class="d-flex justify-content-around mb-5">
+  <!-- Info Box -->
+  <div class="box-info d-flex flex-column mb-3">
+    <div class="ingredient-header">
+      Information
+    </div>
+    <div class="p-2 bd-highlight">Flex item 1</div>
+    <div class="p-2 bd-highlight">Flex item 2</div>
+    <div class="p-2 bd-highlight">Flex item 3</div>
+  </div>
+
+  <!-- Description Box -->
+  <div class="box-info">
+    <div class="ingredient-header">
+      Description
+    </div>
+    <div class="wine-description">
+      <%= @wine.description %>
+    </div>
+  </div>
+
 </div>
