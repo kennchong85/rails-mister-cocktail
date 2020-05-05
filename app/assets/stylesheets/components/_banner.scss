@@ -12,6 +12,14 @@
   font-weight: bold;
   font-family: 'Special Elite', cursive;
   text-align: center;
-  margin-top: 275px;
+  margin-top: 195px;
 }
 
+@media (min-width: 100px) and (max-width: 575px) {
+  .banner {
+    background-size: cover;
+    background-position: center 100%;
+    padding: 150px 0;
+    height: 100vh;
+  }
+}

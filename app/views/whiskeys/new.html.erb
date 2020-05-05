@@ -1,0 +1,9 @@
+
+<div class="container form-margin-top">
+  <%= simple_form_for @whiskey do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :year %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>

@@ -1,16 +1,16 @@
-<!-- Cocktail Picture Banner -->
+<!-- Wine Picture Banner -->
 <div class="index-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);">
   <div class="container">
-    <div class="index-banner-text">Cocktails</div>
+    <div class="index-banner-text">Wines</div>
   </div>
 </div>
-<!-- Individual Cocktail cards -->
+<!-- Individual Wine cards -->
 <div class="container mt-5">
   <div class="cards">
-    <% @cocktails.each do |cocktail| %>
-      <%= link_to cocktail_path(cocktail), :class=>'no-decoration' do %>
+    <% @wines.each do |wine| %>
+      <%= link_to wine_path(wine), :class=>'no-decoration' do %>
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-          <%= cocktail.name %>
+          <%= wine.name %>
         </div>
       <% end %>
     <% end %>

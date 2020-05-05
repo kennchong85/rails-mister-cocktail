@@ -48,6 +48,9 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.4)
     byebug (11.1.1)
     coffee-rails (4.2.2)
@@ -223,6 +226,7 @@ DEPENDENCIES
   actionview (>= 5.2.4.2)
   autoprefixer-rails
   bootsnap (>= 1.1.0)
+  bootstrap-sass
   byebug
   coffee-rails (~> 4.2)
   country_select

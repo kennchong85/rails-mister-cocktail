@@ -1,8 +1,20 @@
 // Specific CSS for your home-page
 .categories {
-  margin-left: 450px;
-  margin-right: 450px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 120px;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 120px;
+  }
 }
 
 .categories:hover .card-category{
