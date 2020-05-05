@@ -4,7 +4,7 @@
   background-position: 50% 50%;
   // background-position: center;
   padding: 150px 150px 150px;
-  margin-top: 70px;
+  // margin-top: 70px;
 }
 
 .index-banner-text {
@@ -13,6 +13,16 @@
   font-size: 60px;
   font-family: 'Special Elite', cursive;
   text-align: center;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .index-banner-text {
+    font-size: 40px;
+  }
+
+  .index-banner {
+    padding: 150px 40px 100px;
+  }
 }
 
 .index-banner-description {

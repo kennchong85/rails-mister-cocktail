@@ -2,39 +2,8 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: #4F4F4F;
-  height: 70px;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.navbar-light .navbar-brand {
-  color: white;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-  font-weight: bold;
-}
-
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-  color: white;
-  font-weight: bold;
-}
-
-.margin_space_for_navbar {
-  margin-top: 70px;
-  width: 100%;
-}
-
-@media (min-width: 100px) and (max-width: 575px) {
-  .margin_space_for_navbar {
-    margin-top: 70px;
-    width: 554px;
-  }
 }

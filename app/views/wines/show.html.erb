@@ -1,20 +1,36 @@
 <!-- Wine Picture Banner -->
 <div class="index-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);">
   <div class="container">
-    <div class="index-banner-text"><%= @wine.name %> (<%= @wine.vintage %>)</div>
+    <div class="index-banner-text"><%= @wine.name %></div>
   </div>
 </div>
 
-<!-- Description -->
-<div class="d-flex justify-content-around mb-5">
+<!-- Information Area -->
+<div class="d-flex justify-content-around mt-1 mx-4 flex-wrap">
   <!-- Info Box -->
   <div class="box-info d-flex flex-column mb-3">
     <div class="ingredient-header">
       Information
     </div>
-    <div class="p-2 bd-highlight">Flex item 1</div>
-    <div class="p-2 bd-highlight">Flex item 2</div>
-    <div class="p-2 bd-highlight">Flex item 3</div>
+    <!-- Detail Information Box -->
+    <div>
+      <!-- country -->
+      <div class="d-flex justify-content-between">
+        <div class="name-title">Country:</div>
+        <div><%= @wine.country.name %></div>
+      </div>
+      <!-- year -->
+      <div class="d-flex justify-content-between">
+        <div class="name-title">Year:</div>
+        <div><%= @wine.vintage %></div>
+      </div>
+      <!-- alcohol percentage -->
+      <div class="d-flex justify-content-between">
+        <div class="name-title">Alcohol Percentage:</div>
+        <div><%= @wine.alcohol_percent %></div>
+      </div>
+    </div>
+
   </div>
 
   <!-- Description Box -->
