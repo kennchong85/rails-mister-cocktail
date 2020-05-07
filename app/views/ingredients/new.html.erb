@@ -2,6 +2,7 @@
 <div class="container form-margin-top">
   <%= simple_form_for [@cocktail,@ingredient] do |f| %>
     <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
     <%= f.button :submit, class: "btn btn-primary" %>
   <% end %>
 </div>

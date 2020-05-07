@@ -6,6 +6,7 @@
     <%= f.input :description %>
     <%= f.input :vintage %>
     <%= f.input :alcohol_percent %>
+    <%= f.input :photo, as: :file %>
     <%= f.association :country %>
     <%= f.button :submit, class: "btn btn-primary" %>
   <% end %>

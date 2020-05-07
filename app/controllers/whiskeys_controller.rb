@@ -43,7 +43,7 @@ class WhiskeysController < ApplicationController
   private
 
   def user_params
-    params.require(:whiskey).permit(:name, :description, :year, :id)
+    params.require(:whiskey).permit(:name, :description, :year, :photo)
   end
 
   def find_whiskey
