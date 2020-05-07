@@ -4,8 +4,10 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   resources :cocktails do
-    resources :doses, :ingredients
+    resources :doses
   end
+
+  resources :ingredients
 
   resources :wines
 

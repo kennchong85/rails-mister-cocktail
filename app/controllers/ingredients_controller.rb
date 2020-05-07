@@ -9,7 +9,7 @@ class IngredientsController < ApplicationController
   end
 
   def new
-    @cocktail = Cocktail.find(params[:cocktail_id])
+    # @cocktail = Cocktail.find(params[:cocktail_id])
     @ingredient = Ingredient.new
   end
 
