@@ -15,6 +15,10 @@
     margin-right: 5%;
     margin-bottom: 120px;
   }
+
+  .category-title {
+    font-size: 34px;
+  }
 }
 
 .categories:hover .card-category{
@@ -23,7 +27,6 @@
   transform: scale(.98);
   box-shadow:none;
   transition-duration: 0.5s;
-
 }
 
 .categories:hover .card-category:hover{
