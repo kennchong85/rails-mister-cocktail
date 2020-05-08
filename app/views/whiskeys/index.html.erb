@@ -1,18 +1,22 @@
-<!-- Cocktail Picture Banner -->
+<!-- Whiskey Picture Banner -->
 <div class="index-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1542741081-bc7afc3480fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);">
   <div class="container">
     <div class="index-banner-text">Whiskeys</div>
   </div>
 </div>
-<!-- Individual Cocktail cards -->
+<!-- Individual Whiskey cards -->
 <div class="container mt-5">
-  <div class="cards">
-    <% @whiskeys.each do |whiskey| %>
-      <%= link_to whiskey_path(whiskey), :class=>'no-decoration' do %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path whiskey.photo.key %>')">
-          <%= whiskey.name %>
-        </div>
+  <% if @ingredients.empty? %>
+    <div class="category-title">There are no whiskey added. Please add a new whiskey.</div>
+  <% else %>
+    <div class="cards">
+      <% @whiskeys.each do |whiskey| %>
+        <%= link_to whiskey_path(whiskey), :class=>'no-decoration' do %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path whiskey.photo.key %>')">
+            <%= whiskey.name %>
+          </div>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>

@@ -6,13 +6,17 @@
 </div>
 <!-- Individual Cocktail cards -->
 <div class="container mt-5">
-  <div class="cards">
-    <% @cocktails.each do |cocktail| %>
-      <%= link_to cocktail_path(cocktail), :class=>'no-decoration' do %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key %>')">
-          <%= cocktail.name %>
-        </div>
+ <% if @ingredients.empty? %>
+    <div class="category-title">There are no cocktail added. Please add a new cocktail.</div>
+  <% else %>
+    <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+        <%= link_to cocktail_path(cocktail), :class=>'no-decoration' do %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key %>')">
+            <%= cocktail.name %>
+          </div>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>
