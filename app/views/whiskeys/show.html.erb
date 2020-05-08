@@ -1,5 +1,5 @@
 <!-- Whiskey Picture Banner -->
-<div class="index-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);">
+<div class="index-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @whiskey.photo.key %>');">
   <div class="container">
     <div class="index-banner-text"><%= @whiskey.name %> (<%= @whiskey.year %>)</div>
   </div>
